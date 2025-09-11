@@ -1,0 +1,50 @@
+1. 計算 baseline 的 cost
+    -> data_size / packet_size / priority_queue< pair<counter, id> > / total_cost[Nodes]
+    (1) 送 puu 到 sink -> AGG_ctrl_packet
+    (2) 建 priority_queue (max_heap) in sink
+    (3) 計算 cost
+
+
+demo:
+1. class payload 變數
+
+2. class IoT_device, sink 變數、SET、GET
+
+3. rcv_handler
+(1) IoT_ctrl_packet
+    IoT_sink:   init sink
+    IoT_device: elder / neighbor (set)
+
+(2) AGG_ctrl_packet
+    IoT_device: send -> neighbor / parent / 
+                        count_data_ID / elder
+                reverse_path
+    IoT_sink:   store packet data into sink
+                reverse_path
+
+(3) DIS_ctrl_packet
+    IoT_sink:   neighbor / old_cost
+                new path
+                 -> elder / count_size_id
+                send_pkt
+    IoT_device: update data / send_pkt
+
+(4) IoT_data_packet
+    同 HW2，用 msg 送所有節點的 parent 到 sink
+
+4. main() 輸入 / 輸出
+
+
+
+
+
+
+
+
+
+
+問題：
+1. 這個作業有沒有辦法用 multi-thread 或其他方法加速運算速度
+2. HW1, 2, 3 成績占比 15%/15%/20% ？ (期中 20%, 期末 30%)
+3. 之後還會有 HW3 前幾名的人報告嗎？
+4. ITSA 加分作業的細節 ( 一題加幾分、題目限制(上學期)、demo )

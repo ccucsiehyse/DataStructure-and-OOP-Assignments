@@ -1,0 +1,142 @@
+Microsoft Windows [版本 10.0.22631.3737]
+(c) Microsoft Corporation. 著作權所有，並保留一切權利。
+
+C:\Users\Evan>sftp hyshiang111u@tux.cs.ccu.edu.tw
+hyshiang111u@tux.cs.ccu.edu.tw's password:
+Connected to tux.cs.ccu.edu.tw.
+sftp> put "D:\CCU\二下\OOP\HW2+3\OOP_HW2_411410006.cpp"
+Uploading D:/CCU/二下/OOP/HW2+3/OOP_HW2_411410006.cpp to /.CSDATA_NFS/home/under/u111/hyshiang111u/OOP_HW2_411410006.cpp
+D:/CCU/二下/OOP/HW2+3/OOP_HW2_411410006.cpp                                         100%   97KB 321.1KB/s   00:00
+sftp> exit
+
+C:\Users\Evan>ssh hyshiang111u@tux.cs.ccu.edu.tw
+hyshiang111u@tux.cs.ccu.edu.tw's password:
+Last login: Sat Jun  8 16:47:25 2024 from 223.139.58.95
+================================== CCU CSIE ==================================
+    Welcome to CCU CSIE Computing Server :-)           -last update:2021.05.05
+
+    Computing Server:
+
+        FreeBSD
+                 daemon.cs.ccu.edu.tw
+
+        Linux
+                 tux.cs.ccu.edu.tw (www2.cs.ccu.edu.tw)
+
+     Announce:
+
+                2021/05/05      csie0, tux, daemon 的家目錄皆相同，不需連回 csie0
+                2021/03/24      CPU 新增至 64 cores
+                2021/03/08      新增 Guide
+                2020/10/18      支援 vscode - ssh remote (需使用 VPN)
+                2020/07/01      Tux 工作站建置中...
+
+     Guide:
+                更改密碼 - passwd
+                更改 Shell - chsh.ldap
+
+                機房網頁： http://manual.cs.ccu.edu.tw
+    如有任何問題，請 mail 至 lab@cs.ccu.edu.tw     聯絡分機： 23132
+==============================================================================
+Notice: this machine is based on Intel Xeon Gold
+hyshiang111u@tux[5:56am]~> ls
+a.out  Maildir  OOP_HW2_411410006.cpp  prebirthday.c  WWW
+hyshiang111u@tux[5:56am]~> rm prebirthday.c
+rm: remove regular file 'prebirthday.c'? y
+hyshiang111u@tux[5:57am]~> ls
+a.out  Maildir  OOP_HW2_411410006.cpp  WWW
+hyshiang111u@tux[5:57am]~> g++
+a.out*                 Maildir@               OOP_HW2_411410006.cpp  WWW/
+hyshiang111u@tux[5:57am]~> g++ OOP_HW2_411410006.cpp -o a
+hyshiang111u@tux[5:57am]~> ls
+a  a.out  Maildir  OOP_HW2_411410006.cpp  WWW
+hyshiang111u@tux[5:57am]~> rm a.out
+rm: remove regular file 'a.out'? y
+hyshiang111u@tux[5:57am]~> ls
+a  Maildir  OOP_HW2_411410006.cpp  WWW
+hyshiang111u@tux[5:57am]~> ./a
+8 9
+300 0 100
+0 0 1
+1 0 2
+2 1 3
+3 1 4
+4 2 5
+5 2 6
+6 3 7
+7 4 7
+8 6 7
+time           0                                         srcID          0   dstID 4294967295
+             IoT_ctrl_packet generating
+time           0   recID          0   pktID          0   srcID          0   dstID 4294967295   preID          0 nexID          0   IoT_ctrl_packet counter 0
+time           0   senID          0   pktID          0   srcID          0   dstID 4294967295   preID          0 nexID 4294967295   IoT_ctrl_packet counter 1
+time          10   recID          2   pktID          0   srcID          0   dstID 4294967295   preID          0 nexID 4294967295   IoT_ctrl_packet counter 1
+time          10   senID          2   pktID          0   srcID          0   dstID 4294967295   preID          2 nexID 4294967295   IoT_ctrl_packet counter 2
+time          10   recID          1   pktID          0   srcID          0   dstID 4294967295   preID          0 nexID 4294967295   IoT_ctrl_packet counter 1
+time          10   senID          1   pktID          0   srcID          0   dstID 4294967295   preID          1 nexID 4294967295   IoT_ctrl_packet counter 2
+time          20   recID          5   pktID          0   srcID          0   dstID 4294967295   preID          2 nexID 4294967295   IoT_ctrl_packet counter 2
+time          20   recID          0   pktID          0   srcID          0   dstID 4294967295   preID          2 nexID 4294967295   IoT_ctrl_packet counter 2
+time          20   recID          3   pktID          0   srcID          0   dstID 4294967295   preID          1 nexID 4294967295   IoT_ctrl_packet counter 2
+time          20   recID          6   pktID          0   srcID          0   dstID 4294967295   preID          2 nexID 4294967295   IoT_ctrl_packet counter 2
+time          20   recID          0   pktID          0   srcID          0   dstID 4294967295   preID          1 nexID 4294967295   IoT_ctrl_packet counter 2
+time          20   senID          3   pktID          0   srcID          0   dstID 4294967295   preID          3 nexID 4294967295   IoT_ctrl_packet counter 3
+time          20   senID          5   pktID          0   srcID          0   dstID 4294967295   preID          5 nexID 4294967295   IoT_ctrl_packet counter 3
+time          20   recID          4   pktID          0   srcID          0   dstID 4294967295   preID          1 nexID 4294967295   IoT_ctrl_packet counter 2
+time          20   senID          4   pktID          0   srcID          0   dstID 4294967295   preID          4 nexID 4294967295   IoT_ctrl_packet counter 3
+time          20   senID          6   pktID          0   srcID          0   dstID 4294967295   preID          6 nexID 4294967295   IoT_ctrl_packet counter 3
+time          30   recID          7   pktID          0   srcID          0   dstID 4294967295   preID          4 nexID 4294967295   IoT_ctrl_packet counter 3
+time          30   recID          7   pktID          0   srcID          0   dstID 4294967295   preID          6 nexID 4294967295   IoT_ctrl_packet counter 3
+time          30   recID          1   pktID          0   srcID          0   dstID 4294967295   preID          4 nexID 4294967295   IoT_ctrl_packet counter 3
+time          30   senID          7   pktID          0   srcID          0   dstID 4294967295   preID          7 nexID 4294967295   IoT_ctrl_packet counter 4
+time          30   recID          2   pktID          0   srcID          0   dstID 4294967295   preID          6 nexID 4294967295   IoT_ctrl_packet counter 3
+time          30   recID          7   pktID          0   srcID          0   dstID 4294967295   preID          3 nexID 4294967295   IoT_ctrl_packet counter 3
+time          30   recID          2   pktID          0   srcID          0   dstID 4294967295   preID          5 nexID 4294967295   IoT_ctrl_packet counter 3
+time          30   recID          1   pktID          0   srcID          0   dstID 4294967295   preID          3 nexID 4294967295   IoT_ctrl_packet counter 3
+time          40   recID          6   pktID          0   srcID          0   dstID 4294967295   preID          7 nexID 4294967295   IoT_ctrl_packet counter 4
+time          40   recID          3   pktID          0   srcID          0   dstID 4294967295   preID          7 nexID 4294967295   IoT_ctrl_packet counter 4
+time          40   recID          4   pktID          0   srcID          0   dstID 4294967295   preID          7 nexID 4294967295   IoT_ctrl_packet counter 4
+time         100                                         srcID          2   dstID          0
+             IoT_data_packet generating
+time         100                                         srcID          5   dstID          0
+             IoT_data_packet generating
+time         100                                         srcID          4   dstID          0
+             IoT_data_packet generating
+time         100                                         srcID          6   dstID          0
+             IoT_data_packet generating
+time         100   recID          4   pktID          3   srcID          4   dstID          0   preID          4 nexID          4   IoT_data_packet
+time         100   recID          6   pktID          4   srcID          6   dstID          0   preID          6 nexID          6   IoT_data_packet
+time         100   recID          5   pktID          2   srcID          5   dstID          0   preID          5 nexID          5   IoT_data_packet
+time         100   senID          5   pktID          2   srcID          5   dstID          0   preID          5 nexID          2   IoT_data_packet
+time         100   recID          2   pktID          1   srcID          2   dstID          0   preID          2 nexID          2   IoT_data_packet
+time         100                                         srcID          1   dstID          0
+             IoT_data_packet generating
+time         100   recID          1   pktID          5   srcID          1   dstID          0   preID          1 nexID          1   IoT_data_packet
+time         100                                         srcID          7   dstID          0
+             IoT_data_packet generating
+time         100   recID          7   pktID          6   srcID          7   dstID          0   preID          7 nexID          7   IoT_data_packet
+time         100   senID          7   pktID          6   srcID          7   dstID          0   preID          7 nexID          3   IoT_data_packet
+time         100   senID          6   pktID          4   srcID          6   dstID          0   preID          6 nexID          2   IoT_data_packet
+time         100                                         srcID          3   dstID          0
+             IoT_data_packet generating
+time         100   recID          3   pktID          7   srcID          3   dstID          0   preID          3 nexID          3   IoT_data_packet
+time         100   senID          3   pktID          7   srcID          3   dstID          0   preID          3 nexID          1   IoT_data_packet
+time         100                                         srcID          0   dstID          0                    IoT_data_packet generating
+time         100   recID          0   pktID          8   srcID          0   dstID          0   preID          0 nexID          0   IoT_data_packet
+time         110   recID          3   pktID          6   srcID          7   dstID          0   preID          7 nexID          3   IoT_data_packet
+time         110   recID          2   pktID          2   srcID          5   dstID          0   preID          5 nexID          2   IoT_data_packet
+time         110   recID          2   pktID          4   srcID          6   dstID          0   preID          6 nexID          2   IoT_data_packet
+time         110   recID          1   pktID          7   srcID          3   dstID          0   preID          3 nexID          1   IoT_data_packet
+time         110   senID          2   pktID          4   srcID          6   dstID          0   preID          2 nexID          0   IoT_data_packet
+time         120   recID          0   pktID          4   srcID          6   dstID          0   preID          2 nexID          0   IoT_data_packet
+0 0
+1 22007
+2 0
+3 0
+4 12
+5 2
+6 2
+7 171057205
+hyshiang111u@tux[5:58am]~> vim
+a*                     Maildir@               OOP_HW2_411410006.cpp  WWW/
+hyshiang111u@tux[5:58am]~> vim OOP_HW2_411410006.cpp
+hyshiang111u@tux[DING!]~>

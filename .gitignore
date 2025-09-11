@@ -1,0 +1,69 @@
+# 編譯產生的執行檔
+*.exe
+*.out
+*.o
+*.obj
+
+# Visual Studio 相關檔案
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+
+# IDE 相關檔案
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 作業系統相關檔案
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 臨時檔案
+*.tmp
+*.temp
+*.log
+
+# 備份檔案
+*.bak
+*.backup
+*~
+
+# 測試檔案 (如果不想上傳)
+# test.c
+# test.cpp
+# try.c
+# patric.c
+# student2.c
+
+# 文件檔案 (可選，根據需要調整)
+# *.docx
+# *.pptx
+# *.pdf
